@@ -2,9 +2,9 @@ import imaplib
 import getpass
 from datetime import datetime, timedelta
 
-BRUKER = "greknuts@online.no"
+BRUKER = "brukernavn"
 PASSORD = getpass.getpass("Skriv inn e-post passord: ")
-IMAP_SERVER = "imap.online.no"
+IMAP_SERVER = "imapserver"
 MAPPE_INN = "INBOX"
 MAPPE_UT = "MAS"
 MAKS_ANTALL = 200
