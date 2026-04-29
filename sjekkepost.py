@@ -8,8 +8,8 @@ from email.header import decode_header
 from urllib.parse import urlparse
 password = getpass.getpass("Skriv inn passord: ")
 
-mail = imaplib.IMAP4_SSL("mail.online.no")
-mail.login("greknuts@online.no", password)
+mail = imaplib.IMAP4_SSL("e-postserver")
+mail.login("brukernavn", password)
 
 status, mailboxes = mail.list()
 
