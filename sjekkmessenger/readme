@@ -1,0 +1,148 @@
+# Messenger Text Analyzer
+
+Et Python-verktøy for å analysere Messenger-data (JSON) og identifisere relevante mønstre i store mengder meldinger.
+
+Prosjektet er laget som et praktisk eksempel på hvordan man kan kombinere enkel scripting med strukturert dataanalyse.
+
+---
+
+## 🚀 Hva gjør den?
+
+* Leser Messenger JSON-export
+* Søker etter definerte nøkkelord/uttrykk
+* Finner treff i både meldinger og rå JSON
+* Genererer rapport i:
+
+  * TXT (lesbar)
+  * CSV (klar for Excel / analyse)
+
+---
+
+## 🎯 Hvorfor dette prosjektet?
+
+Dette ble laget for å:
+
+* håndtere store datamengder effektivt
+* automatisere manuell gjennomgang
+* lage et enkelt, fleksibelt analyseverktøy
+
+Samtidig viser det:
+
+* praktisk Python-bruk
+* filhåndtering og parsing av JSON
+* strukturert tilnærming til databehandling
+
+---
+
+## 📦 Teknologi
+
+* Python 3
+* Standardbibliotek (json, csv, os)
+
+Ingen eksterne dependencies.
+
+---
+
+## ▶️ Hvordan bruke
+
+1. Last ned Messenger-data fra Facebook:
+
+   * Settings → Your Information → Download your information
+   * Velg **Messages**
+   * Format: **JSON**
+
+2. Pakk ut ZIP-filen
+
+3. Kjør scriptet:
+
+```bash id="xk1a6f"
+python messenger_sok_interaktiv.py
+```
+
+4. Oppgi:
+
+   * mappe med JSON-filer
+   * søkeordfil (eller bruk standard)
+
+---
+
+## 🔍 Søkeord
+
+Opprett:
+
+```id="3ts9pu"
+sokeord.txt
+```
+
+Eksempel:
+
+```id="3f5kpd"
+barn
+mindreårig
+under 18
+hemmelig
+send bilde
+snapchat
+```
+
+* Ett ord per linje
+* `#` brukes til kommentarer
+
+---
+
+## 📊 Output
+
+Scriptet lager:
+
+```id="pxs8kq"
+treff_rapport.txt
+treff_rapport.csv
+```
+
+CSV kan åpnes direkte i Excel for videre filtrering og analyse.
+
+---
+
+## 🧠 Designvalg
+
+* Ingen eksterne bibliotek → enkel å kjøre overalt
+* Leser hele JSON → robust mot ulike eksportformater
+* Søkeord i ekstern fil → fleksibel bruk
+* Interaktiv input → brukervennlig
+
+---
+
+## ⚠️ Viktig
+
+Dette verktøyet er ment for analyse av egne data.
+
+Messenger-data kan inneholde sensitiv informasjon.
+Unngå å dele slike data offentlig.
+
+---
+
+## 🔮 Videre utvikling
+
+Mulige utvidelser:
+
+* filtrering på dato/tidsrom
+* bedre strukturert parsing av meldinger
+* visning av avsender og samtale
+* GUI (desktop-app)
+* eksport til Power BI / analyseverktøy
+
+---
+
+## 👩‍💻 Om
+
+Laget som et praktisk verktøy og læringsprosjekt innen:
+
+* dataanalyse
+* automatisering
+* Python scripting
+
+---
+
+## 📄 Lisens
+
+Fritt å bruke og videreutvikle.
